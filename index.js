@@ -12,7 +12,7 @@ const semver = require('semver');
 const readline = require('readline');
 
 function startProject() {
-	const child = spawn("node", ["Goat.js"], {
+	const child = spawn("node", ["main.js"], {
 		cwd: __dirname,
 		stdio: "inherit",
 		shell: true;
