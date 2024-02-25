@@ -11,6 +11,12 @@ const fs = require('fs')
 const semver = require('semver');
 const readline = require('readline');
 
+function startProject() {
+	const child = spawn("node", ["Goat.js"], {
+		cwd: __dirname,
+		stdio: "inherit",
+		shell: true;
+
 let configJson;
 let packageJson;
 const sign = '(›^-^)›';
